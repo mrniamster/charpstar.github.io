@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Product Configurator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer.min.js" type="module"></script>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div id="controls" class="card">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <h6 class="text-primary text-center"> Select Color to preview it in the model</h6>
+                        </div>
+                        <div class="form-group">
+                            <label for="top2AshColor">Top2 Ash Color:</label>
+                            <input type="color" id="top2AshColor" class="form-control" data-material-name="Top2_Ash"
+                                value="#ffffff">
+                        </div>
+                        <div class="form-group">
+                            <label for="legsColor">Legs Color:</label>
+                            <input type="color" id="legsColor" class="form-control" data-material-name="Legs"
+                                value="#ffffff">
+                        </div>
+                        <div class="form-group">
+
+                            <label for="plywoodSidesColor">Plywood Sides Color:</label>
+                            <input type="color" id="plywoodSidesColor" class="form-control"
+                                data-material-name="Plywood sides" value="#ffffff">
+                        </div>
+                        <div class="form-group">
+                            <label for="topAshColor">Top Ash Color:</label>
+                            <input type="color" id="topAshColor" class="form-control" data-material-name="Top_Ash"
+                                value="#ffffff">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="whiteColor">White Color:</label>
+                            <input type="color" id="whiteColor" class="form-control" data-material-name="White"
+                                value="#ffffff">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topGreyColor">Top Grey Color:</label>
+                            <input type="color" id="topGreyColor" class="form-control" data-material-name="Top_Grey"
+                                value="#ffffff">
+                        </div>
+                        <div class="form-group">
+                            <label for="topKayarColor">Top Kayar Color:</label>
+                            <input type="color" id="topKayarColor" class="form-control" data-material-name="Top_Kayar"
+                                value="#ffffff">
+                        </div>
+                        <div class="form-group">
+                            <label for="top2GreyColor">Top2 Grey Color:</label>
+                            <input type="color" id="top2GreyColor" class="form-control" data-material-name="Top2_Grey"
+                                value="#ffffff">
+                        </div>
+                        <div class="form-group">
+                            <label for="top2KayarColor">Top2 Kayar Color:</label>
+                            <input type="color" id="top2KayarColor" class="form-control" data-material-name="Top2_Kayar"
+                                value="#ffffff">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 model-viewer-container">
+                <h6 class="text-primary text-center">Drag to rotate the model</h6>
+                <model-viewer id="tableViewer" src="https://cdn.charpstar.net/Assets/WorkTest-Table.glb"
+                    alt="A 3D model of a table" camera-controls auto-rotate
+                    style="width: 100%; height: 100%;"></model-viewer>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <h6 class="text-primary text-center">Upload an image to preview it in the model</h6>
+                        </div>
+                        <div class="form-group">
+                            <label for="top2AshColor">Top2 Ash Color:</label>
+                            <input type="file" id="top2AshColor" class="form-control" data-material-name="Top2_Ash"
+                                value="#ffffff">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="legsColor">Legs Color:</label>
+                            <input type="file" id="legsColor" class="form-control" data-material-name="Legs"
+                                value="#ffffff">
+                        </div>
+                        <div class="form-group">
+                            <label for="plywoodSidesColor">Plywood Sides Color:</label>
+                            <input type="file" id="plywoodSidesColor" class="form-control"
+                                data-material-name="Plywood sides" value="#ffffff">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topAshColor">Top Ash Color:</label>
+                            <input type="file" id="topAshColor" class="form-control" data-material-name="Top_Ash"
+                                value="#ffffff">
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="whiteColor">White Color:</label>
+                            <input type="file" id="whiteColor" class="form-control" data-material-name="White"
+                                value="#ffffff">
+                        </div>
+
+
+
+                        <div class="form-group">
+                            <label for="topGreyColor">Top Grey Color:</label>
+                            <input type="file" id="topGreyColor" class="form-control" data-material-name="Top_Grey"
+                                value="#ffffff">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="topKayarColor">Top Kayar Color:</label>
+                            <input type="file" id="topKayarColor" class="form-control" data-material-name="Top_Kayar"
+                                value="#ffffff">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="top2GreyColor">Top2 Grey Color:</label>
+                            <input type="file" id="top2GreyColor" class="form-control" data-material-name="Top2_Grey"
+                                value="#ffffff">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="top2KayarColor">Top2 Kayar Color:</label>
+                            <input type="file" id="top2KayarColor" class="form-control" data-material-name="Top2_Kayar"
+                                value="#ffffff">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/assets/js/index.js"></script>
+</body>
+
+</html>
