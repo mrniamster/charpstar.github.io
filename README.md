@@ -36,7 +36,7 @@ To run the project locally, follow these steps:
 Clone the repository to your local machine:
 bash
 Copy code
-git clone [<repository-url>](https://github.com/mrniamster/Charpstar.git)
+git clone [<repository-url>](https://github.com/mrniamster/charpstar.github.io.git)
 Navigate to the project directory:
 bash
 Copy code
